@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drôle de Bazar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE SON -->
+<div id="page-sound" class="page active">
+    <h2>Pour jouer, active le son :</h2>
+    <button id="btn-activate-sound">Activer la musique</button>
+</div>
+
+<!-- PAGE ACCUEIL -->
+<div id="page-home" class="page">
+    <div class="home-box">
+        <h1>Drôle de Bazar</h1>
+        <button id="btn-toggle-sound">🔊</button>
+        <div class="gif-container">
+            <img src="Ours.gif" alt="Mascotte">
+        </div>
+        <p class="phrase">
+            Quand le rideau est ouvert, retiens l’ordre des images en bois.<br>
+            Une fois qu’il est fermé, remets-les dans le même ordre.
+        </p>
+        <button id="btn-play">Jouer</button>
+        <button id="btn-rules">Règles</button>
+    </div>
+</div>
+
+<!-- PAGE RÈGLES -->
+<div id="page-rules" class="page">
+    <h2>Règles</h2>
+    <p>Ici tu mettras ton PDF.</p>
+    <button class="btn-back">⬅ Retour</button>
+</div>
+
+<!-- PAGE MENU DIFFICULTÉ -->
+<div id="page-menu" class="page">
+    <h2>Choisis la difficulté</h2>
+    <button class="diff" data-sec="60">Facile (1 min)</button>
+    <button class="diff" data-sec="30">Moyen (30 s)</button>
+    <button class="diff" data-sec="10">Difficile (10 s)</button>
+    <button class="btn-back">⬅ Retour</button>
+</div>
+
+<!-- PAGE CHRONO -->
+<div id="page-game" class="page">
+    <div id="chrono-rect">
+        <h2>Observer</h2>
+        <img src="Gif10s.gif" class="gif10" alt="GIF chrono">
+        <div id="chrono">00:00</div>
+    </div>
+    <button id="btn-end-game" style="display:none;">⬅ Retour au menu</button>
+</div>
+
+<!-- AUDIO fallback pour bureau -->
+<audio id="music-fallback" loop src="Msiquedroledebazar.mp3"></audio>
+<audio id="sound-end-fallback" src="coups.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

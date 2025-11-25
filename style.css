@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6e9d7;
+    text-align: center;
+    color: #222;
+}
+
+.page { display: none; padding: 20px; }
+.page.active { display: block; }
+
+.home-box, #page-menu, #chrono-rect {
+    background: #fff9e8;
+    padding: 30px;
+    width: 85%;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 { font-size: 40px; margin-bottom: 20px; }
+h2 { margin-bottom: 20px; }
+.phrase { font-size: 18px; margin-top:5px; }
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #ee80a8;
+    color: #fff;
+    transition: 0.2s;
+}
+button:hover { opacity: 0.9; transform: scale(1.02); }
+
+#btn-toggle-sound {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.gif-container img { width: 180px; }
+
+#chrono-rect {
+    padding: 40px 20px;
+    position: relative;
+    background: #fff9e8;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#chrono-rect h2 { margin-bottom: 20px; }
+
+.gif10 { width: 250px; margin-bottom: 20px; }
+
+#chrono { font-size: 56px; color: #4365ae; margin-top: 10px; }
